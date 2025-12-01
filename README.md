@@ -3,7 +3,7 @@
 topic : SDG 11
 
 
-konsep: 
+konsep: So we will make a code based on SDG 11. This code will
 
 
 pembagian tugas:

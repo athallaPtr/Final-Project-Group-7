@@ -14,8 +14,8 @@ pembagian tugas:
 
 Paksi: Formula, carbon footprint calculator
 
-atha: input, trip recorder, export summary
+atha: input, export summary
 
-raisha:
+raisha: transportation option, 
 
-alia:
+alia: trip recorder

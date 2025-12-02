@@ -14,4 +14,8 @@ pembagian tugas:
 
 Paksi: Formula, carbon footprint calculator
 
-Meeeeowwwwwww
+atha: 
+
+raisha:
+
+alia:

@@ -3,11 +3,11 @@
 topic : SDG 11 (Sustainable Mobility System)
 
 
-konsep: Aplikasi sederhana yang dapat membantu orang dalam kehidupan sehari hari. 
+concept: A simple application that can help people in their daily lives.
 
-aplikasi yang dapat mencatat perjalanan pengguna menggunakan transportasi ramah lingkungan (bus, kereta, sepeda, pejalan kaki). 
+An application that records user trips using environmentally friendly transportation (bus, train, bicycle, or pedestrian).
 
-Program yang dapat menghitung jarak, biaya/kalori, dan estimasi CO₂ yang dihemat dibanding menggunakan kendaraan pribadi. Menyimpan riwayat perjalanan, menampilkan statistik, dan dapat mengekspor ringkasan.
+The program can calculate distance, cost/calories, and estimated CO₂ savings compared to using a private vehicle. It stores trip history, displays statistics, and can export summaries.
 
 
 pembagian tugas:

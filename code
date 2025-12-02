@@ -1,1 +1,14 @@
+#include <stdio.h>
+
+int main(){
+
+    int choice;
+
+        printf("\n=== SDG 11: Sustainable Mobility System ===\n");
+        printf("1. Add Trip\n2. View Trips\n3. Summary\n4. Exit\n");
+        printf("Select menu: ");
+        scanf("%d", &choice);
+
+    return 0;
+}
 

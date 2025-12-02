@@ -12,3 +12,5 @@ The program can calculate distance, cost/calories, and estimated CO₂ savings c
 
 pembagian tugas:
 Meow
+
+Meeeeowwwwwww

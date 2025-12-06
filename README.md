@@ -7,12 +7,12 @@ concept: A simple application that can help people in their daily lives.
 
 HOW THE PROGRAM WORKS
 
-The program allows the user to:\n
--Add a trip\n
--View all recorded trips\n
--See a summary of all trips\n
--Export the trip report to a text file\n
--Exit the program\n
+The program allows the user to:
+Add a trip
+View all recorded trips
+See a summary of all trips
+Export the trip report to a text file
+Exit the program
 
 1. Adding a Trip
 When the user chooses Add Trip, the program will ask:

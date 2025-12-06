@@ -26,12 +26,17 @@ Transportation category: (bus, train , bicycle, walking).
 **After that**, the program calculates estimated CO₂ saved, showing the environmental benefit of using sustainable transportation instead of a private car.
 
 
+.
 
+.
 
 
 **task division:**
 
 Paksi: Formula, carbon footprint calculator
+
 atha: input, export summary
+
 raisha: transportation option, 
+
 alia: trip recorder

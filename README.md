@@ -12,22 +12,18 @@ Add a trip,
 View all recorded trips, 
 See a summary of all trips, 
 Export the trip report to a text file, and 
-Exit the program
+Exit the program.
 
-**Adding a Trip**
-When the user chooses Add Trip, the program will ask:
--Destination
--Distance (in km)
--Transportation category:
-    -Public transport (Bus or Train)
-    -Private (Bicycle)
-    -Walking
+**When the user chooses Add Trip, the program will ask:**
+Destination, 
+Distance (in km), and 
+Transportation category: (bus, train , bicycle, walking).
 
-Depending on the option:
--Public transportation requires the user to enter ticket cost
--Bicycle or walking requires calories burned
+**Depending on the option:**
+*Public transportation* requires the user to enter ticket cost, and 
+*Bicycle or walking* requires calories burned
 
-After that, the program calculates estimated CO₂ saved, showing the environmental benefit of using sustainable transportation instead of a private car.
+**After that**, the program calculates estimated CO₂ saved, showing the environmental benefit of using sustainable transportation instead of a private car.
 
 task division:
 

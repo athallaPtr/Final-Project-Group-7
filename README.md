@@ -5,12 +5,31 @@ topic : SDG 11 (Sustainable Mobility System)
 
 concept: A simple application that can help people in their daily lives.
 
-An application that records user trips using environmentally friendly transportation (bus, train, bicycle, or pedestrian).
+HOW THE PROGRAM WORKS
 
-The program can calculate distance, cost/calories, and estimated CO₂ savings compared to using a private vehicle. It stores trip history, displays statistics, and can export summaries.
+The program allows the user to:
+-Add a trip
+-View all recorded trips
+-See a summary of all trips
+-Export the trip report to a text file
+-Exit the program
 
+1. Adding a Trip
+When the user chooses Add Trip, the program will ask:
+-Destination
+-Distance (in km)
+-Transportation category:
+    -Public transport (Bus or Train)
+    -Private (Bicycle)
+    -Walking
 
-pembagian tugas:
+Depending on the option:
+-Public transportation requires the user to enter ticket cost
+-Bicycle or walking requires calories burned
+
+After that, the program calculates estimated CO₂ saved, showing the environmental benefit of using sustainable transportation instead of a private car.
+
+task division:
 
 Paksi: Formula, carbon footprint calculator
 

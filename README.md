@@ -25,10 +25,28 @@ Transportation category: (bus, train , bicycle, walking).
 
 **After that**, the program calculates estimated CO₂ saved, showing the environmental benefit of using sustainable transportation instead of a private car.
 
+**Viewing Trip History** 
+this option will display: 
+Destination, 
+Distance, 
+Transport type, 
+CO₂ saved, 
+Cost or Calories (depending on transport type).
+
+**Trip Summary**
+this option will display:
+Total number of trips, 
+Total distance traveled, 
+Total CO₂ saved, 
+Count of each transport category.
+
+
 
 .
-
 .
+
+
+
 
 
 **task division:**

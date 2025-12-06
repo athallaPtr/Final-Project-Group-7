@@ -5,16 +5,16 @@ topic : SDG 11 (Sustainable Mobility System)
 
 concept: A simple application that can help people in their daily lives.
 
-HOW THE PROGRAM WORKS
+**HOW THE PROGRAM WORKS**
 
-The program allows the user to:
-Add a trip
-View all recorded trips
-See a summary of all trips
-Export the trip report to a text file
+**The program allows the user to:**
+Add a trip, 
+View all recorded trips, 
+See a summary of all trips, 
+Export the trip report to a text file, and 
 Exit the program
 
-1. Adding a Trip
+**Adding a Trip**
 When the user chooses Add Trip, the program will ask:
 -Destination
 -Distance (in km)

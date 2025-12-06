@@ -1,4 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+// ================= FUNCTION PROTOTYPES ================= (atha)
+void addTrip();
+void showTrips();
+void showSummary();
+void exportReport();
+
+
 
 int main(){
 

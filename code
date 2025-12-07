@@ -4,9 +4,9 @@
 
 
 // ================= FUNCTION PROTOTYPES ================= (atha)
-void addTrip();
-void showTrips();
-void showSummary();
+void addTrip(); 
+void showTrips(); (atha)
+void showSummary(); (atha)
 void exportReport();
 
 

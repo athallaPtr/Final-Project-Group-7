@@ -2,6 +2,26 @@
 #include <stdlib.h>
 #include <string.h>
 
+// ====================== ENUM, UNION, STRUCT ======================
+typedef enum { 
+    BUS = 1,
+    TRAIN, 
+    BICYCLE, 
+    WALKING 
+} TransportType;
+
+typedef union {
+    float cost;      
+    int calories;    
+} CostOrCalories;
+
+typedef struct {
+    char destination[50];
+    float distance;
+    float emissionSaved;
+    TransportType type;
+    CostOrCalories info;
+} Trip;
 
 // ======== FUNCTION PROTOTYPES ========
 void addTrip(); 

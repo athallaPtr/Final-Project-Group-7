@@ -3,7 +3,7 @@
 #include <string.h>
 
 
-// ================= FUNCTION PROTOTYPES ================= (atha)
+// ======== FUNCTION PROTOTYPES ========
 void addTrip(); 
 void showTrips(); (atha)
 void showSummary(); (atha)

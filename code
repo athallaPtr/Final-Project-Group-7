@@ -13,12 +13,35 @@ void exportReport();
 
 int main(){
 
+    // Input System + Menu Handling (atha)
+
+    trips = malloc(capacity * sizeof(struct Trip));
+
     int choice;
 
-        printf("\n=== SDG 11: Sustainable Mobility System ===\n");
-        printf("1. Add Trip\n2. View Trips\n3. Summary\n4. Exit\n");
-        printf("Select menu: ");
+    while (1) {
+        printf("\n====== SDG 11: Sustainable Mobility System ======\n");
+        printf("1. Add Trip\n");
+        printf("2. View Trips\n");
+        printf("3. Show Summary\n");
+        printf("4. Export Report\n");
+        printf("5. Exit\n");
+        printf("Choose: ");
         scanf("%d", &choice);
+
+        switch(choice) {
+            case 1: addTrip(); break;
+            case 2: showTrips(); break;
+            case 3: showSummary(); break;
+            case 4: exportReport(); break;
+            case 5: 
+                printf("\nExiting program...\n");
+                free(trips);
+                return 0;
+            default:
+                printf("Invalid input.\n");
+        }
+    }
 
     return 0;
 }

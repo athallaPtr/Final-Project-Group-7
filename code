@@ -27,7 +27,7 @@ typedef struct {
 void addTrip(); 
 void showTrips(); (atha)
 void showSummary(); (atha)
-void exportReport();
+
 
 
 
@@ -66,3 +66,13 @@ int main(){
     return 0;
 }
 
+// ==FUNCTION==
+
+void showTrips() {
+    if(count == 0) {
+        printf("\nNo trips recorded.\n");
+        return;
+    }
+
+    printf("\n--- Trip History ---\n");
+}

@@ -76,3 +76,10 @@ void showTrips() {
 
     printf("\n--- Trip History ---\n");
 }
+
+void showSummary() {
+    if(count == 0){
+        printf("\nNo summary available.\n");
+        return;
+    }
+}

@@ -53,7 +53,7 @@ Count of each transport category.
 
 Paksi: Formula, carbon footprint calculator
 
-atha: input, export summary
+atha: input, summary result
 
 raisha: transportation option, 
 

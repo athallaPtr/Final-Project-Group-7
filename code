@@ -16,6 +16,7 @@ typedef union {
     int calories;    
 } CostOrCalories;
 
+//Alia : Trip recorder data structure
 typedef struct {
     char destination[50];
     float distance;
@@ -92,9 +93,16 @@ void showSummary() {
     }
 }
 
+// ------------------- HELPERS ---------------------------
 
 
-
+// Raisha
+char* getTransportName(TransportType type){
+    if(type == BUS) return "Bus";
+    if(type == TRAIN) return "Train";
+    if(type == BICYCLE) return "Bicycle";
+    return "Walking";
+}
 
 
 

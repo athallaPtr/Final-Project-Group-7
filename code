@@ -73,7 +73,64 @@ int main(){
     return 0;
 }
 
-// ==FUNCTION==
+// ====================== FUNCTIONS ======================
+// Paksi (input + transport logic)
+void addTrip() {
+    expandMemoryIfNeeded();
+
+    printf("\n--- Add Trip ---\n");
+
+    printf("Destination: ");
+    scanf("    %[^\n]", trips[count].destination);
+
+    do {
+        printf("Distance (km): ");
+        scanf("%f", &trips[count].distance);
+        if (trips[count].distance <= 0)
+            printf("Must be greater than 0.\n");
+    } while (trips[count].distance <= 0);
+
+    int category;
+    printf("\nSelect category:\n");
+    printf("1. Public Transport\n");
+    printf("2. Private (Bicycle)\n");
+    printf("3. Walking\n");
+    printf("Choose: ");
+    scanf("%d", &category);
+
+    if(category == 1){
+        printf("\nPublic Transport:\n1. Bus\n2. Train\nChoose: ");
+        scanf("%d", &trips[count].type);
+
+        if(trips[count].type != BUS && trips[count].type != TRAIN){
+            printf("Invalid input.\n");
+            return;
+        }
+
+        printf("Ticket Cost: ");
+        scanf("%f", &trips[count].info.cost);
+
+    } else if (category == 2){
+        trips[count].type = BICYCLE;
+        printf("Calories burned: ");
+        scanf("%d", &trips[count].info.calories);
+
+    } else if (category == 3){
+        trips[count].type = WALKING;
+        printf("Calories burned: ");
+        scanf("%d", &trips[count].info.calories);
+
+    } else {
+        printf("Invalid category.\n");
+        return;
+    }
+
+    // Paksi: CO₂ Formula
+    trips[count].emissionSaved = calculateEmission(trips[count].type, trips[count].distance);
+    count++;
+
+    printf("\nTrip Added Successfully!\n");
+}
 
 // ------------------- SHOW TRIPS ------------------------
 // Athalla
@@ -146,16 +203,11 @@ char* getTransportName(TransportType type){
     return "Walking";
 }
 
-
-
-
-
-
-
-
-
+// Alia
 void expandMemoryIfNeeded(){
-if(count>= capacity) {
-capacity *= 2;
-trips = realloc(trips, capacity * sizeof(Trip));
+    if(count>= capacity) {
+        capacity *= 2;
+        trips = realloc(trips, capacity * sizeof(Trip));
+    } 
 }
+

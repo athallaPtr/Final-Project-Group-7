@@ -51,10 +51,10 @@ Count of each transport category.
 
 **task division:**
 
-Paksi: Formula, carbon footprint calculator
+Paksi: CO₂ Formula, addTrip.
 
-atha: input, summary result
+atha: input system Menu, and result.
 
-raisha: transportation option, 
+raisha: transportation option.
 
-alia: trip recorder
+alia: trip recorder, memory.

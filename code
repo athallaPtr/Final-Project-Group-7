@@ -30,9 +30,10 @@ int count = 0;
 int capacity = 5;
 
 // ======== FUNCTION PROTOTYPES ========
-void addTrip(); 
+void addTrip(); //(Paksi)
 void showTrips(); //(atha)
 void showSummary(); //(atha)
+float calculateEmission(TransportType type, float distance); // Paksi
 char* getTransportName(TransportType type);  //(Raisha)
 
 void expandMemoryIfNeeded(); //(alia)
@@ -77,6 +78,8 @@ int main(){
 
 // ==FUNCTION==
 
+// ------------------- SHOW TRIPS ------------------------
+// Athalla
 void showTrips() {
     if(count == 0) {
         printf("\nNo trips recorded.\n");
@@ -94,7 +97,12 @@ void showSummary() {
 }
 
 // ------------------- HELPERS ---------------------------
-
+// Paksi
+float calculateEmission(TransportType type, float distance){
+    if(type == BUS) return distance * 80;
+    if(type == TRAIN) return distance * 100;
+    return distance * 200;
+}
 
 // Raisha
 char* getTransportName(TransportType type){

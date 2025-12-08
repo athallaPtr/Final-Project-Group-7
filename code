@@ -23,10 +23,17 @@ typedef struct {
     CostOrCalories info;
 } Trip;
 
+Trip *trips = NULL; 
+int count = 0; 
+int capacity = 5;
+
 // ======== FUNCTION PROTOTYPES ========
 void addTrip(); 
 void showTrips(); (atha)
 void showSummary(); (atha)
+
+
+void expandMemoryIfNeeded(); (alia)
 
 
 
@@ -82,4 +89,22 @@ void showSummary() {
         printf("\nNo summary available.\n");
         return;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+void expandMemoryIfNeeded(){
+if(count>= capacity) {
+capacity *= 2;
+trips = realloc(trips, capacity * sizeof(Trip));
 }

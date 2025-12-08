@@ -25,6 +25,8 @@ typedef struct {
     CostOrCalories info;
 } Trip;
 
+// ================= GLOBAL VARIABLES =================
+// Alia: Dynamic storage handling
 Trip *trips = NULL; 
 int count = 0; 
 int capacity = 5;
@@ -35,16 +37,13 @@ void showTrips(); //(atha)
 void showSummary(); //(atha)
 float calculateEmission(TransportType type, float distance); // Paksi
 char* getTransportName(TransportType type);  //(Raisha)
-
 void expandMemoryIfNeeded(); //(alia)
 
+// ====================== MAIN MENU ======================
+// Athalla: Input System + Menu Handling
 int main(){
-
-    // Input System + Menu Handling (atha)
-
-    trips = malloc(capacity * sizeof(struct Trip));
-
     int choice;
+    trips = malloc(capacity * sizeof(struct Trip));
 
     while (1) {
         printf("\n====== SDG 11: Sustainable Mobility System ======\n");
@@ -60,8 +59,7 @@ int main(){
             case 1: addTrip(); break;
             case 2: showTrips(); break;
             case 3: showSummary(); break;
-            case 4: exportReport(); break;
-            case 5: 
+            case 4: 
                 printf("\nExiting program...\n");
                 free(trips);
                 return 0;
@@ -74,6 +72,7 @@ int main(){
 }
 
 // ====================== FUNCTIONS ======================
+// ------------------- ADD TRIP ---------------------------
 // Paksi (input + transport logic)
 void addTrip() {
     expandMemoryIfNeeded();
@@ -81,7 +80,7 @@ void addTrip() {
     printf("\n--- Add Trip ---\n");
 
     printf("Destination: ");
-    scanf("    %[^\n]", trips[count].destination);
+    scanf(" %[^\n]", trips[count].destination);
 
     do {
         printf("Distance (km): ");

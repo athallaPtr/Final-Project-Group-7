@@ -38,9 +38,6 @@ char* getTransportName(TransportType type);  //(Raisha)
 
 void expandMemoryIfNeeded(); //(alia)
 
-
-
-
 int main(){
 
     // Input System + Menu Handling (atha)
@@ -102,11 +99,35 @@ void showTrips() {
     }
 }
 
+// ------------------- SUMMARY REPORT --------------------
+// Athalla
 void showSummary() {
     if(count == 0){
         printf("\nNo summary available.\n");
         return;
     }
+
+    float totalDistance = 0, totalEmission = 0;
+    int public=0, private=0, walking=0;
+
+    for(int i=0; i<count; i++){
+        totalDistance += trips[i].distance;
+        totalEmission += trips[i].emissionSaved;
+
+        if(trips[i].type == BUS || trips[i].type == TRAIN) public++;
+        else if(trips[i].type == BICYCLE) private++;
+        else walking++;
+    }
+
+    printf("\n--- Summary ---\n");
+    printf("Total Trips: %d\n", count);
+    printf("Total Distance: %.2f km\n", totalDistance);
+    printf("Total CO2 Saved: %.2f g\n\n", totalEmission);
+
+    printf("Category Breakdown:\n");
+    printf(" - Public Transport: %d\n", public);
+    printf(" - Bicycle: %d\n", private);
+    printf(" - Walking: %d\n", walking);
 }
 
 // ------------------- HELPERS ---------------------------

@@ -3,6 +3,7 @@
 #include <string.h>
 
 // ====================== ENUM, UNION, STRUCT ======================
+//Raisha : Transportation Options
 typedef enum { 
     BUS = 1,
     TRAIN, 
@@ -29,11 +30,11 @@ int capacity = 5;
 
 // ======== FUNCTION PROTOTYPES ========
 void addTrip(); 
-void showTrips(); (atha)
-void showSummary(); (atha)
+void showTrips(); //(atha)
+void showSummary(); //(atha)
+char* getTransportName(TransportType type);  //(Raisha)
 
-
-void expandMemoryIfNeeded(); (alia)
+void expandMemoryIfNeeded(); //(alia)
 
 
 

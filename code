@@ -43,15 +43,14 @@ void expandMemoryIfNeeded(); //(alia)
 // Athalla: Input System + Menu Handling
 int main(){
     int choice;
-    trips = malloc(capacity * sizeof(struct Trip));
+    trips = malloc(capacity * sizeof(Trip));
 
     while (1) {
         printf("\n====== SDG 11: Sustainable Mobility System ======\n");
         printf("1. Add Trip\n");
         printf("2. View Trips\n");
         printf("3. Show Summary\n");
-        printf("4. Export Report\n");
-        printf("5. Exit\n");
+        printf("4. Exit\n");
         printf("Choose: ");
         scanf("%d", &choice);
 
@@ -209,4 +208,3 @@ void expandMemoryIfNeeded(){
         trips = realloc(trips, capacity * sizeof(Trip));
     } 
 }
-

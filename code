@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-// ====================== ENUM, UNION, STRUCT ======================
+// ======== ENUM, UNION, STRUCT ========
 //Raisha : Transportation Options
 typedef enum { 
     BUS = 1,
@@ -25,11 +25,13 @@ typedef struct {
     CostOrCalories info;
 } Trip;
 
-// ================= GLOBAL VARIABLES =================
-// Alia: Dynamic storage handling
+
+// ======== GLOBAL VARIABLES ========
+// Alia: Dynamic storage
 Trip *trips = NULL; 
 int count = 0; 
 int capacity = 5;
+
 
 // ======== FUNCTION PROTOTYPES ========
 void addTrip(); //(Paksi)
@@ -39,8 +41,9 @@ float calculateEmission(TransportType type, float distance); // Paksi
 char* getTransportName(TransportType type);  //(Raisha)
 void expandMemoryIfNeeded(); //(alia)
 
-// ====================== MAIN MENU ======================
-// Athalla: Input System + Menu Handling
+
+// ======== MAIN MENU ========
+// Athalla: Input System + Menu
 int main(){
     int choice;
     trips = malloc(capacity * sizeof(Trip));
@@ -70,7 +73,9 @@ int main(){
     return 0;
 }
 
-// ====================== FUNCTIONS ======================
+
+// ======== FUNCTIONS ========
+
 // ------------------- ADD TRIP ---------------------------
 // Paksi (input + transport logic)
 void addTrip() {
@@ -185,7 +190,7 @@ void showSummary() {
     printf(" - Walking: %d\n", walking);
 }
 
-// ------------------- HELPERS ---------------------------
+// ------------------- FUNCTION ---------------------------
 // Paksi
 float calculateEmission(TransportType type, float distance){
     if(type == BUS) return distance * 80;
